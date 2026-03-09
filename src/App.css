@@ -1,0 +1,114 @@
+body {
+    background-color: #0f172a;
+}
+
+.task-card {
+  background: #0d1321;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #0002;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: box-shadow 0.2s;
+}
+
+.task-completed {
+  background: #25322f;
+}
+
+.task-title {
+  font-size: 1.1rem;
+  color: #f1f5f9;
+}
+
+.task-completed .task-title {
+    color: #f1f5f9;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-btn {
+  border: 2px solid #f1f5f9;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.task-btn-check,
+.task-btn-x {
+  background: transparent;
+  color: #f1f5f9;
+  padding: 2px 8px;
+}
+
+.task-btn-check:hover {
+  background-color: #22c55e;
+}
+
+.task-btn-x:hover {
+  background-color: #ef4444;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-and-button-fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.text-and-button-fields input,
+.text-and-button-fields button {
+    height: 40px;
+    border-radius: 10px;
+  }
+
+.text-and-button-fields input{
+    width: 300px;
+    padding: 0 12px;
+    border: 2px solid #f1f5f9;
+    font-size: 16px;
+    background-color: #1e293b;
+    color: #fff;
+}
+
+.text-and-button-fields button{
+    color: #222;
+    background-color: #f1f5f9;
+    width: 60px;
+}
+
+.text-and-button-fields button:hover {
+    background-color: #f1f5f9;
+}
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pomodoro-title {
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px #00000033;
+  margin-top: 10vh;
+  margin-bottom: 24px;
+  text-align: center;
+}

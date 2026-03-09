@@ -59,17 +59,17 @@ function Tasks() {
           tasks.map((task) => {
             return (
               <li
-                className={`task-card flex items-center justify-between min-w-[280px] w-full bg-[#0d1321] rounded-[10px] shadow-md p-[16px_20px] mb-4 transition-shadow ${task.completed ? 'task-completed bg-[#25322f]' : ''}`}
+                className={`task-card flex items-center justify-between min-w-[280px] w-full bg-[#0d1321] rounded-[10px] shadow-lg p-[16px_20px] mb-4 transition-shadow ${task.completed ? 'task-completed bg-[#25322f]' : ''}`}
                 key={task.id}
               >
                 <span className={`task-title text-[1.1rem] ${task.completed ? 'text-slate-100' : 'text-slate-100'}`}>{task.title}</span>
                 <div className="task-actions flex gap-2">
                   <button
-                    className="task-btn task-btn-check border-2 border-slate-200 rounded-[6px] h-8 w-8 flex items-center justify-center text-slate-200 bg-transparent hover:bg-emerald-500 transition text-base cursor-pointer"
+                    className="task-btn task-btn-check border-2 border-slate-200 rounded-md h-7 w-7 flex items-center justify-center text-slate-200 bg-transparent hover:bg-emerald-500 transition text-base cursor-pointer"
                     onClick={() => completeTask(task)}
                   >V</button>
                   <button
-                    className="task-btn task-btn-x border-2 border-slate-200 rounded-[6px] h-8 w-8 flex items-center justify-center text-slate-200 bg-transparent hover:bg-red-500 transition text-base cursor-pointer"
+                    className="task-btn task-btn-x border-2 border-slate-200 rounded-md h-7 w-7 flex items-center justify-center text-slate-200 bg-transparent hover:bg-red-500 transition text-base cursor-pointer"
                     onClick={() => deleteTask(task.id)}
                   >X</button>
                 </div>

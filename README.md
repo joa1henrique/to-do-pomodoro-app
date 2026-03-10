@@ -1,8 +1,4 @@
 # React + Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules. One top of the standard Vite setup, [tailwindcss](https://tailwindcss.com/) is installed and ready to be used in React components.
-
-Additional references:
-* [Getting started with Vite](https://vitejs.dev/guide/)
-* [Tailwind documentation](https://tailwindcss.com/docs/installation)
-
+Atividade de site to-do list + cronômetro do método Pomodoro. Segui o design passado pelo professor nos vídeos de referência, porém fiz algumas alterações nos estilos. Deixei o projeto na estrutura que veio do fork, mas adicionei 'Timer.tsx' para não deixar tudo junto num único arquivo.
+Aluno: João Henrique C. C. Lima.

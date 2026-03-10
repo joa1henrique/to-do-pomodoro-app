@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Timer from "./Timer";
 
 type Task = {
   completed: boolean;
@@ -48,7 +49,7 @@ function Tasks() {
           value={input}
           onChange={(event) => setInput(event.target.value)}
         />
-        <button className="h-10 w-[60px] rounded-[10px] bg-slate-200 text-[#222] hover:bg-slate-300 transition" type="submit">
+        <button className="h-10 w-[60px] rounded-[10px] font-bold text-base bg-slate-200 text-slate-900 hover:bg-white transition-all" type="submit">
           Add
         </button>
       </form>
@@ -84,8 +85,9 @@ function Tasks() {
 
 export default function Pomodoro() {
   return (
-    <div className="min-h-screen w-full text-white bg-[#0f172a] flex flex-col items-center">
-      <h1 className="pomodoro-title font-bold text-[2.5rem] tracking-wide mt-[10vh] mb-6 text-center drop-shadow">Tasks</h1>
+    <div className="min-h-screen w-full text-white bg-[#0f172a] flex flex-col items-center py-10">
+      <h1 className="pomodoro-title font-bold text-[2.5rem] tracking-wide text-pink-600 mt-[5vh] mb-8 text-center drop-shadow">Pomodoro</h1>
+      <Timer />
       <Tasks />
     </div>
   );
